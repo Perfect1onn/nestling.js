@@ -1,5 +1,5 @@
 {
-  "name": "nestling",
+  "name": "nestling.js",
   "version": "1.0.0",
   "description": "",
   "main": "./src/main.ts",
@@ -13,7 +13,7 @@
     "url": "https://github.com/Perfect1onn/nestling.git"
   },
   "keywords": [],
-  "author": "Samir Hatamov",
+  "author": "Samir Hatamov <samirhatamov45@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
