@@ -1,11 +1,44 @@
-export { Nestling } from "./main";
+export { Nestling } from "./main/main";
 export {
 	Module,
 	Controller,
+	Middleware,
 	Get,
 	Methods,
-	Middleware,
 	Patch,
 	Post,
 	Put,
 } from "./decorators";
+export type {
+	Request,
+	Response,
+	Application,
+	CookieOptions,
+	Errback,
+	ErrorRequestHandler,
+	Express,
+	Handler,
+	IRoute,
+	IRouter,
+	IRouterHandler,
+	IRouterMatcher,
+	Locals,
+	MediaType,
+	NextFunction,
+	RequestHandler,
+	RequestParamHandler,
+	Router,
+	RouterOptions,
+	Send,
+} from "express";
+export {
+	application,
+	json,
+	query,
+	raw,
+	request,
+	response,
+	static,
+	text,
+	urlencoded,
+} from "express";

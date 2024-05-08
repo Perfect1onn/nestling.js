@@ -1,4 +1,4 @@
-import express, { type Express } from "express";
+import express, { type Express, Request, Response, NextFunction } from "express";
 
 interface Constructor {
 	new (...args: any[]): any;
@@ -7,7 +7,7 @@ interface Constructor {
 export class Nestling {
 	static create(
 		AppModule: Constructor,
-		...middlewares: (() => any)[]
+		...middlewares: ((req: Request, res: Response, next: NextFunction) => any)[]
 	): Express {
 		const app = express();
 
